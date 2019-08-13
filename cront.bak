@@ -1,24 +1,24 @@
 crontab -e
 
 #redes
-20 8 * * 1,4 export DISPLAY=:0 && gnome-terminal --maximize --bash -c "cd ~/Schedule; clear; python3 clases.py redes; exit;exec bash"
+20 8 * * 1,4 export DISPLAY=:0 && gnome-terminal --maximize -- bash -c "cd ~/Schedule; clear; python3 clases.py redes; exit;exec bash"
 #redes_lab
-50 13 * * 3 export DISPLAY=:0 && gnome-terminal --maximize --bash -c "cd ~/Schedule; clear; python3 clases.py redes_lab; exit;exec bash"
+50 13 * * 3 export DISPLAY=:0 && gnome-terminal --maximize -- bash -c "cd ~/Schedule; clear; python3 clases.py redes_lab; exit;exec bash"
 #evap
-50 9 * * 1,4 export DISPLAY=:0 && gnome-terminal --maximize --bash -c "cd ~/Schedule; clear; python3 clases.py evap; exit;exec bash"
+50 9 * * 1,4 export DISPLAY=:0 && gnome-terminal --maximize -- bash -c "cd ~/Schedule; clear; python3 clases.py evap; exit;exec bash"
 #ingles
-20 11 * * 1,4 export DISPLAY=:0 && gnome-terminal --maximize --bash -c "cd ~/Schedule; clear; python3 clases.py ingles; exit;exec bash"
+20 11 * * 1,4 export DISPLAY=:0 && gnome-terminal --maximize -- bash -c "cd ~/Schedule; clear; python3 clases.py ingles; exit;exec bash"
 #ingles corto
-20 11 * * 2,5 export DISPLAY=:0 && gnome-terminal --maximize --bash -c "cd ~/Schedule; clear; python3 clases.py ingles_corto; exit;exec bash"
+20 11 * * 2,5 export DISPLAY=:0 && gnome-terminal --maximize -- bash -c "cd ~/Schedule; clear; python3 clases.py ingles_corto; exit;exec bash"
 #natacion
-15 13 * * 1 export DISPLAY=:0 && gnome-terminal --maximize --bash -c "cd ~/Schedule; clear; python3 clases.py swim; exit;exec bash"
+15 13 * * 1 export DISPLAY=:0 && gnome-terminal --maximize -- bash -c "cd ~/Schedule; clear; python3 clases.py swim; exit;exec bash"
 #salsa
-50 8 * * 2,5 export DISPLAY=:0 && gnome-terminal --maximize --bash -c "cd ~/Schedule; clear; python3 clases.py salsa; exit;exec bash"
+50 8 * * 2,5 export DISPLAY=:0 && gnome-terminal --maximize -- bash -c "cd ~/Schedule; clear; python3 clases.py salsa; exit;exec bash"
 #bases de datos
-50 12 * * 2,5 export DISPLAY=:0 && gnome-terminal --maximize --bash -c "cd ~/Schedule; clear; python3 clases.py database; exit;exec bash"
+50 12 * * 2,5 export DISPLAY=:0 && gnome-terminal --maximize -- bash -c "cd ~/Schedule; clear; python3 clases.py database; exit;exec bash"
 #progra
-50 18 * * 2,5 export DISPLAY=:0 && gnome-terminal --maximize --bash -c "cd ~/Schedule; clear; python3 clases.py progra; exit;exec bash"
+50 18 * * 2,5 export DISPLAY=:0 && gnome-terminal --maximize -- bash -c "cd ~/Schedule; clear; python3 clases.py progra; exit;exec bash"
 #algebra
-50 9 * * 3 export DISPLAY=:0 && gnome-terminal --maximize --bash -c "cd ~/Schedule; clear; python3 clases.py algebra; exit;exec bash"
+50 9 * * 3 export DISPLAY=:0 && gnome-terminal --maximize -- bash -c "cd ~/Schedule; clear; python3 clases.py algebra; exit;exec bash"
 #mentor
-50 15 * * 3 export DISPLAY=:0 && gnome-terminal --maximize --bash -c "cd ~/Schedule; clear; python3 clases.py mentor; exit;exec bash"
+50 15 * * 3 export DISPLAY=:0 && gnome-terminal --maximize -- bash -c "cd ~/Schedule; clear; python3 clases.py mentor; exit;exec bash"
