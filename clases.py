@@ -17,8 +17,8 @@ def base(clase, salon, edificio, tipo, horario, tag="", check=True):
 		print("TAREAS REGISTRADAS:")
 		os.system(rtm + " ls | grep " + tag )
 		print("========================")
-	os.system(rtm + " planner")
-	print("========================")
+	#os.system(rtm + " planner")
+	#print("========================")
 	input()
 
 if __name__ == "__main__":
