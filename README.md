@@ -22,7 +22,7 @@ Finally follow instructions for crontab
 #m h * * days | message dialog
 20 8 * * 1,4 export DISPLAY=:0 && gnome-terminal --maximize -- bash -c "cd ~/timetable; clear; python3 main.py <subject> <interface>; exit;exec bash;"
 #m h * * days | timer
-35 8 * * 1,4 "cd ~/timetable; python3 main.py <subject> <interface> <elapsed_time>"
+35 8 * * 1,4 export DISPLAY=:0 && cd ~/timetable; python3 main.py <subject> <interface> <elapsed_time>
 ```
 
 ## To Do

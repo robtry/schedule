@@ -21,9 +21,11 @@ if __name__ == "__main__":
 		elif subject == 'redes':
 			timetablepy.reminder('Interconexión de Redes', 'LAB-004', 'Teórica y Práctica', '18:00 - 20:00', subject)
 		elif subject == 'web':
-			timetablepy.reminder('Desarrollo de Aplicaciones Web', 'LAB-004', 'Teórica', '10:00 - 13:00', subject)
-		elif subject == 'weblab':
-			timetablepy.reminder('Desarrollo de Aplicaciones Web | Lab', 'LAB-004', 'Práctica', '10:30 - 11:30', subject)
+			timetablepy.reminder('Desarrollo de Aplicaciones Web', '2306', 'Teórica y Práctica', '18:00 - 22:00', subject)
+		elif subject == 'cvc1':
+			timetablepy.reminder('Estrategia vinculación laboral', '2307', 'Pendeja', '18:00 - 22:00', subject)
+		elif subject == 'spinning':
+			timetablepy.reminder('Ciclismo Indoor', 'CE101', 'Sport', '18:00 - 22:00', subject, False)
 		else:
 			print('Error en argumentos')
 	elif interface == 'timer':
@@ -38,9 +40,9 @@ if __name__ == "__main__":
 		elif subject == 'redes':
 			timetablepy.timer('Interconexión de Redes', duration=120, elapsedTime=elapsed_time)
 		elif subject == 'web':
-			timetablepy.timer('Desarrollo de Aplicaciones Web', elapsedTime=elapsed_time)
-		elif subject == 'weblab':
-			timetablepy.timer('Desarrollo de Aplicaciones Web | Lab', duration=60, elapsedTime=elapsed_time)
+			timetablepy.timer('Desarrollo de Aplicaciones Web', duration=240, elapsedTime=elapsed_time)
+		elif subject == 'cvc1':
+			timetablepy.timer('Estrategia vinculación laboral', elapsedTime=elapsed_time)
 		else:
 			print('Error en argumentos')
 	else:
