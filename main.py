@@ -6,7 +6,8 @@ if __name__ == "__main__":
 	# print(sys.argv)
 	subject = sys.argv[1]
 	interface = sys.argv[2]
-	elapsed_time = sys.argv[3]
+	if len(sys.argv) > 3:
+		elapsed_time = sys.argv[3]
 
 	if interface == 'reminder':
 		if subject == 'database':
