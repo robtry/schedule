@@ -1,7 +1,7 @@
 import os
 from .current import timer
 
-def reminder(subject, classroom, kind, schedule, tag="*", nextClass=None, check=True):
+def reminder(subject, classroom, kind, schedule, tag="*", check=True):
 
 	def checkRTM():
 		location_rtm = os.popen('which rtm').read().strip()
@@ -27,5 +27,4 @@ def reminder(subject, classroom, kind, schedule, tag="*", nextClass=None, check=
 		print("========================")
 	#os.system(rtm + " planner")
 	#print("========================")
-	input("press return to continue ...")
-	timer(subject, nextClass)
+	input()

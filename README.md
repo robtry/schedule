@@ -20,10 +20,13 @@ Finally follow instructions for crontab
 
 ```sh
 #m h * * days | message dialog
-20 8 * * 1,4 export DISPLAY=:0 && gnome-terminal --maximize -- bash -c "cd ~/timetable; clear; python3 main.py <argument>; exit;exec bash;"
+20 8 * * 1,4 export DISPLAY=:0 && gnome-terminal --maximize -- bash -c "cd ~/timetable; clear; python3 main.py <subject> <interface>; exit;exec bash;"
+#m h * * days | timer
+35 8 * * 1,4 "cd ~/timetable; python3 main.py <subject> <interface>"
 ```
 
 ## To Do
 
 - [ ] System icon tray
 - [ ] Avoid run if no internet connection
+- [ ] Excecute graph after timer but hide console
