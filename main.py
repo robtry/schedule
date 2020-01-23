@@ -6,6 +6,7 @@ if __name__ == "__main__":
 	# print(sys.argv)
 	subject = sys.argv[1]
 	interface = sys.argv[2]
+	elapsed_time = sys.argv[3]
 
 	if interface == 'reminder':
 		if subject == 'database':
@@ -26,19 +27,19 @@ if __name__ == "__main__":
 			print('Error en argumentos')
 	elif interface == 'timer':
 		if subject == 'database':
-			timetablepy.timer('Base de Datos Avanzadas')
+			timetablepy.timer('Base de Datos Avanzadas', elapsedTime=elapsed_time)
 		elif subject == 'etica':
-			timetablepy.timer('Sociedad, Desarrollo y Ciudad de México')
+			timetablepy.timer('Sociedad, Desarrollo y Ciudad de México', elapsedTime=elapsed_time)
 		elif subject == 'machine':
-			timetablepy.timer('Aprendizaje Automático', duration=180)
+			timetablepy.timer('Aprendizaje Automático', duration=180, elapsedTime=elapsed_time)
 		elif subject == 'model':
-			timetablepy.timer('Análisis y modelo de sistemas software', 'Sociedad, Desarrollo y Ciudad de México')
+			timetablepy.timer('Análisis y modelo de sistemas software', 'Sociedad, Desarrollo y Ciudad de México', elapsedTime=elapsed_time)
 		elif subject == 'redes':
-			timetablepy.timer('Interconexión de Redes', duration=120)
+			timetablepy.timer('Interconexión de Redes', duration=120, elapsedTime=elapsed_time)
 		elif subject == 'web':
-			timetablepy.timer('Desarrollo de Aplicaciones Web')
+			timetablepy.timer('Desarrollo de Aplicaciones Web', elapsedTime=elapsed_time)
 		elif subject == 'weblab':
-			timetablepy.timer('Desarrollo de Aplicaciones Web | Lab', duration=60)
+			timetablepy.timer('Desarrollo de Aplicaciones Web | Lab', duration=60, elapsedTime=elapsed_time)
 		else:
 			print('Error en argumentos')
 	else:

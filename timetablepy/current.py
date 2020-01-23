@@ -4,7 +4,7 @@ from tkinter.messagebox import *
 # import datetime
 import pathlib
 
-def timer(subject, nextClass=None, duration=90):
+def timer(subject, nextClass=None, duration=90, elapsedTime=0):
 	# Set up
 	## Root
 	root = Tk()
@@ -28,6 +28,7 @@ def timer(subject, nextClass=None, duration=90):
 	## Progressbar
 	p_bar['maximum'] = 100
 	percentage_lbl = Label(root, text="0%")
+	p_bar['value'] = elapsedTime
 	## Add to the main frame
 	class_lbl.pack()
 	p_bar.pack()
