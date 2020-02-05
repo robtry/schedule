@@ -6,6 +6,8 @@ if __name__ == "__main__":
 	# print(sys.argv)
 	subject = sys.argv[1]
 	interface = sys.argv[2]
+
+	elapsed_time = 0
 	if len(sys.argv) > 3:
 		elapsed_time = sys.argv[3]
 
@@ -23,7 +25,7 @@ if __name__ == "__main__":
 		elif subject == 'web':
 			timetablepy.reminder('Desarrollo de Aplicaciones Web', '2306', 'Teórica y Práctica', '18:00 - 22:00', subject)
 		elif subject == 'cvc1':
-			timetablepy.reminder('Estrategia vinculación laboral', '2307', 'Pendeja', '18:00 - 22:00', subject)
+			timetablepy.reminder('Estrategia vinculación laboral', '2307', 'Pendeja', '10:00 - 11:30', subject)
 		elif subject == 'spinning':
 			timetablepy.reminder('Ciclismo Indoor', 'CE101', 'Sport', '18:00 - 22:00', subject, False)
 		else:
