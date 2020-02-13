@@ -30,3 +30,4 @@ Finally follow instructions for crontab
 - [ ] System icon tray
 - [ ] Avoid run if no internet connection
 - [ ] Excecute graph after timer but hide console
+- [ ] Fix bug, rtm command not found
